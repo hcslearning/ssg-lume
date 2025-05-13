@@ -1,0 +1,22 @@
+---
+title: Create pages with Vento
+links:
+  - text: Page formats
+    url: https://lume.land/docs/getting-started/page-formats/
+  - text: Markdown Cheat Sheet
+    url: https://www.markdownguide.org/cheat-sheet/
+---
+<article>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+    <ul>
+    {{ for link of links }}
+        <li>
+            <a href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+    {{ /for }}
+    </ul>
+</article>
+
+<a href="/volver">Volver</a>
